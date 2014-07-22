@@ -35,3 +35,5 @@ Stopping server running at http://127.0.0.1:1337
 ✔  Testing if element <body> contains text: "Hello World".
 OK. 2 assertions passed. (2813 ms)
 ```
+
+This sample is built for Shippable, a docker based continuous integration and deployment platform.
