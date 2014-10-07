@@ -16,6 +16,8 @@ before_script:
 after_script:
   - "/etc/init.d/xvfb stop"
 
+cache: true
+
 notifications:
   email:
     - exampleone@org.com
