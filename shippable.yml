@@ -16,7 +16,7 @@ before_script:
 after_script:
   - "/etc/init.d/xvfb stop"
 
-cache: true
+cache: false
 
 notifications:
   email:
