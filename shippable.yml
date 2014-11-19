@@ -18,6 +18,7 @@ after_script:
 
 cache: false
 
+build_image: shippable/minv2
 
 notifications:
   email:
