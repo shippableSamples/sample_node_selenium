@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "0.10"
 
+env:
+  global:
+    - secure: lpJ5K49kAoJk7q+wWwF6pBykPzAqOrGp/fAB1BIE3MwaeYvYh7sZ4szmObKcjpmj/8uYpu6agIYrXE9+0e5Te8Xc4n6K/1YT8ghBP2lwvAbM6rpVZmJGzfFHFjT5w8LFe4gRCTOpjF4Xtao8PoD699w7OwYXN+8mj++tSTc4JV3gnqNN9asG781K53iPnDDg5L+UKnictqHjLGw1yMxnVPppErsa308ei8WqhU/FL9vtplVIbtBIc1aQMrau8scvnrZmPsRvYdwuv3S6dClQAB3w2pM+K6Ebes9gxpPLXF3fkfS4wTbv+NzWxa48Kq2eFy83KRp289/iaMfrLmo/zQ==
+
 addons:
   firefox: "23.0"
 
@@ -10,6 +14,7 @@ services:
   - selenium
 
 before_script:
+  - "echo $MY_SECRET"
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
 
