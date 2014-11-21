@@ -23,6 +23,8 @@ after_script:
 
 cache: false
 
+build_timeout: 30
+
 build_image: shippable/minv2
 
 notifications:
