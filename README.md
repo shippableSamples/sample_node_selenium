@@ -1,4 +1,4 @@
-## Selenium tests with Node.JS! [![Build Status](https://api.shippable.com/projects/54664a7ec6f0803064f4838d/badge?branchName=master&no=1416861632589)](https://www.shippable.com/projects/53767cfd2121b37201a1e01f)
+## Selenium tests with Node.JS! [![Build Status](https://api.shippable.com/projects/54664a7ec6f0803064f4838d/badge?branchName=master&no=1416861632589)](https://app.shippable.com/projects/54664a7ec6f0803064f4838d)
 
 Basic "Hello World" example of Selenium browser tests that run on [Shippable.com](shippable.com). Uses the `nightwatch` `npm` module and Node.JS.
 
