@@ -19,7 +19,7 @@ after_script:
 
 cache: true
 
-build_timeout: 360
+build_timeout: 420
 
 build_image: shippable/minv2
 
