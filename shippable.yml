@@ -17,9 +17,9 @@ before_script:
 after_script:
   - "/etc/init.d/xvfb stop"
 
-cache: false
+cache: true
 
-build_timeout: 300
+build_timeout: 360
 
 build_image: shippable/minv2
 
