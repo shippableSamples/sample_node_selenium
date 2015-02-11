@@ -12,7 +12,7 @@
   "description": "",
   "contributors": [],
   "dependencies": {
-    "nightwatch": "~0.4.15"
+    "nightwatch": "~0.5.10"
   },
   "scripts": {
     "test": "node ./server.js & ./node_modules/.bin/nightwatch"
