@@ -2,30 +2,8 @@ build_image: drydock/u12nodall:prod
 language: node_js
 node_js:
   - "0.10"
-<<<<<<< HEAD
-build:
-  pre_ci_boot:
-    image_name: drydock/u14nodpls
-    image_tag: prod
-    pull: true
-  ci:
-  - docker pull drydock/u14nodpls:prod
-  - ls -al
-
-  on_failure:
-    - echo "The job failed!!!!!"
-               
-  on_success:
-    - echo "The job succeeded!!!!"
-
 services:
   - selenium
-
 script:
   - sudo npm install
-=======
-services:
-  - selenium
-script:
->>>>>>> 47ed546... client expects something and server sends something else - fixed
   - xvfb-run --server-args="-ac" npm test
