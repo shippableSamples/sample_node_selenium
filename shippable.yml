@@ -1,14 +1,9 @@
+build_image: drydock/u12nodall:prod
 language: node_js
-
 node_js:
   - "0.10"
-
-addons:
-  firefox: "23.0"
-
 services:
   - selenium
-
-before_script:
-  - "export DISPLAY=:99.0"
-  - "/etc/init.d/xvfb start"
+script:
+  - sudo npm install
+  - xvfb-run --server-args="-ac" npm test
