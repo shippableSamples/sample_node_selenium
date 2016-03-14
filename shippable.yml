@@ -1,11 +1,16 @@
-build_image: shippable/minv2:latest
+build_image: drydock/u14pls:prod
+
 language: node_js
+
 node_js:
   - "0.10"
+
 services:
   - selenium
+
 addons:
-  firefox: "17.0"
+  chrome: "49.0"
+
 script:
   - sudo npm install
   - export DISPLAY=:99.0
