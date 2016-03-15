@@ -3,8 +3,6 @@ node_js:
   - "0.10"
 services:
   - selenium
-addons:
-  firefox: "17.0"
 script:
   - sudo npm install
   - export DISPLAY=:99.0
