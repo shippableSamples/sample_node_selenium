@@ -1,8 +1,9 @@
+
 var http = require('http');
 
 var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('<html><head><p id="demo"></p><script>function myFunction() { document.getElementById("demo").innerHTML = navigator.userAgent;}</script></head><body>Hello World</body></html>');
+  res.end('<html><head><script>setInterval(function(){document.body.innerHTML = document.body.innerHTML.replace("Hello", navigator.userAgent);}, 0);</script></head><body>Hello</body></html>');
   // Prevents the build container from timing out by waiting for the server to close.
   process.nextTick(function () {
     console.log('Stopping server running at http://127.0.0.1:5001');
