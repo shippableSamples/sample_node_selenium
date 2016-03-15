@@ -23,7 +23,6 @@
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
-      "chrome_driver": "",
       "ie_driver": "",
       "screenshots" : {
         "enabled" : false,
