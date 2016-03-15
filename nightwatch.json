@@ -10,11 +10,7 @@
     "server_path" : "",
     "log_path" : "",
     "host" : "127.0.0.1",
-    "port" : 4444,
-    "cli_args": {
-      "webdriver.chrome.driver": "/usr/local/bin/chromedriver",
-      "webdriver.ie.driver": ""
-    }
+    "port" : 4444
   },
 
   "test_settings" : {
@@ -23,13 +19,15 @@
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
+      "firefox_profile": false,
+      "chrome_driver": "",
       "ie_driver": "",
       "screenshots" : {
         "enabled" : false,
         "path" : ""
       },
       "desiredCapabilities": {
-        "browserName": "chrome",
+        "browserName": "firefox",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
