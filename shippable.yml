@@ -1,9 +1,7 @@
-build_image: drydock/u14pls:prod
-
 language: node_js
 
 node_js:
-  - "0.10"
+  - 0.10
 
 services:
   - selenium
@@ -11,7 +9,13 @@ services:
 addons:
   chrome: "49.0"
 
-script:
-  - sudo npm install
-  - export DISPLAY=:99.0
-  - xvfb-run --server-args="-ac" npm test
+build:
+  pre_ci_boot:
+    image_name: drydock/u14pls
+    image_tag: prod
+    pull: true
+
+  ci:
+    - sudo npm install
+    - export DISPLAY=:99.0
+    - xvfb-run --server-args="-ac" npm test
