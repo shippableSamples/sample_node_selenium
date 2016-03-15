@@ -10,7 +10,11 @@
     "server_path" : "",
     "log_path" : "",
     "host" : "127.0.0.1",
-    "port" : 4444
+    "port" : 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "/usr/local/bin/chromedrive",
+      "webdriver.ie.driver": ""
+    }
   },
 
   "test_settings" : {
@@ -27,7 +31,7 @@
         "path" : ""
       },
       "desiredCapabilities": {
-        "browserName": "firefox",
+        "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
