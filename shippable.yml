@@ -6,9 +6,6 @@ node_js:
 services:
   - selenium
 
-addons:
-  google-chrome: "49.0"
-
 build:
   pre_ci_boot:
     image_name: drydock/u14nodpls
