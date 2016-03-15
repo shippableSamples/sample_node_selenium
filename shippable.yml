@@ -7,11 +7,11 @@ services:
   - selenium
 
 addons:
-  chrome: "49.0"
+  google-chrome: "49.0"
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14pls
+    image_name: drydock/u14nodpls
     image_tag: prod
     pull: true
 
