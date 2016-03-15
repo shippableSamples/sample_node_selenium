@@ -12,8 +12,7 @@
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver": "bin/chromedriver",
-      "webdriver.ie.driver": ""
+      "webdriver.chrome.driver": "bin/chromedriver"
     }
   },
 
@@ -31,17 +30,10 @@
         "path": ""
       },
       "desiredCapabilities": {
-        "browserName": "firefox",
+        "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
-    }
-  },
-  "chrome": {
-    "desiredCapabilities": {
-      "browserName": "chrome",
-      "javascriptEnabled": true,
-      "acceptSslCerts": true
     }
   }
 }
