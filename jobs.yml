@@ -2,5 +2,5 @@ jobs:
   - name : tempjob2
     type : manifest
     steps :
-      - GET box
+      - GET box_master
       - PUT busybox
