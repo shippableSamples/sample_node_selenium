@@ -1,0 +1,12 @@
+jobs:
+  - name : tempjob1
+    type : manifest
+    steps :
+      - GET sample_node_selenium
+      - PUT resource2
+
+  - name : tempjob2
+    type : manifest
+    steps :
+      - GET u12php-auto
+      - PUT resource2
