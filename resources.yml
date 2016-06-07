@@ -1,0 +1,8 @@
+resources:
+  - name: busybox
+    type: image
+    integration: dockerhub #your account integration
+    source:
+      name: "library/busybox"
+      isPull: true
+      tag: latest
