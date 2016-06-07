@@ -3,8 +3,10 @@ jobs:
     type : manifest
     steps :
       - GET sample_node_selenium
+      - PUT busybox
 
   - name : tempjob2
     type : manifest
     steps :
       - GET u12php-auto
+      - PUT busybox
