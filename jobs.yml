@@ -3,4 +3,3 @@ jobs:
     type : manifest
     steps :
       - GET box_master
-      - PUT busybox
