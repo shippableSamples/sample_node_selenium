@@ -1,12 +1,18 @@
-build_image: shippable/minv2:latest
 language: node_js
+
 node_js:
-  - "0.10"
+  - 0.10
+
 services:
   - selenium
-addons:
-  firefox: "17.0"
-script:
-  - sudo npm install
-  - export DISPLAY=:99.0
-  - xvfb-run --server-args="-ac" npm test
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14nodpls
+    image_tag: prod
+    pull: true
+
+  ci:
+    - sudo npm install
+    - export DISPLAY=:99.0
+    - xvfb-run --server-args="-ac" npm test
